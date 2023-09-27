@@ -1,23 +1,42 @@
 //localhost
-###
+### Get all contacts from the collection
 GET http://localhost:8080/contacts
-###
-GET http://localhost:8080/contacts/650e332fa43c4453bd52cf55
-###
-GET http://localhost:8080/contacts/650e332fa43c4453bd52cf56
-###
-GET http://localhost:8080/contacts/650e332fa43c4453bd52cf57
-###
-GET http://localhost:8080/contacts/650e332fa43c4453bd52cf58
+
+### Get a contact by id
+GET http://localhost:8080/contacts/65139a47a4281735bb0b6611
+
+### Create a new contact in the collection
+POST http://localhost:8080/contacts HTTP/1.1
+content-Content-Type: application/json
+
+{
+    "firstName": "Calypso",
+    "lastName": "Aurich",
+    "email": "calypso@email.com",
+    "favoriteColor": "grey",
+    "birthday": "April 15"
+}
+
+### Update a contact in the collection by id
+POST http://localhost:8080/contacts/6513989b53f10a40de96d7bf HTTP/1.1
+content-Content-Type: application/json
+
+{
+    "firstName":"Calypso",
+    "lastName":"Aurich",
+    "email":"calypsoBites@email.com",
+    "favoriteColor":"greyish",
+    "birthday":"May 15"
+}
+
+### Delete a contact in the collection by id
+DELETE http://localhost:8080/contacts/6513989b53f10a40de96d7bf HTTP/1.1
+
+
 
 //Production deploy
-###
+### Get all contacts from the collection
 GET https://cse341-projects-tefx.onrender.com/contacts
-###
+
+###### Get a contact by id
 GET https://cse341-projects-tefx.onrender.com/contacts/650e332fa43c4453bd52cf55
-###
-GET https://cse341-projects-tefx.onrender.com/contacts/650e332fa43c4453bd52cf56
-###
-GET https://cse341-projects-tefx.onrender.com/contacts/650e332fa43c4453bd52cf57
-###
-GET https://cse341-projects-tefx.onrender.com/contacts/650e332fa43c4453bd52cf58
