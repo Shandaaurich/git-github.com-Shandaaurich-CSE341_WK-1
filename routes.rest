@@ -7,7 +7,7 @@ GET http://localhost:8080/contacts/65139a47a4281735bb0b6611
 
 ### Create a new contact in the collection
 POST http://localhost:8080/contacts HTTP/1.1
-content-Content-Type: application/json
+Content-Type: application/json
 
 {
     "firstName": "Calypso",
@@ -18,8 +18,8 @@ content-Content-Type: application/json
 }
 
 ### Update a contact in the collection by id
-POST http://localhost:8080/contacts/6513989b53f10a40de96d7bf HTTP/1.1
-content-Content-Type: application/json
+PUT http://localhost:8080/contacts/65147fed9df6103af04fd175 HTTP/1.1
+Content-Type: application/json
 
 {
     "firstName":"Calypso",
@@ -30,7 +30,7 @@ content-Content-Type: application/json
 }
 
 ### Delete a contact in the collection by id
-DELETE http://localhost:8080/contacts/6513989b53f10a40de96d7bf HTTP/1.1
+DELETE http://localhost:8080/contacts/65139a08a4281735bb0b6610 HTTP/1.1
 
 
 

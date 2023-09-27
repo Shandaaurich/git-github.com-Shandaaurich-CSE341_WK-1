@@ -19,7 +19,7 @@ router.post('/', contacts.createContact);
 router.put('/:id', contacts.editContact);
 
 //delete a contact by id
-// router.delete('/:id', contacts.deleteContact);
+router.delete('/:id', contacts.deleteContact);
 
 
 module.exports = router;
