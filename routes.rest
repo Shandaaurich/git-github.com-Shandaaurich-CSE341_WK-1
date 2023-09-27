@@ -39,4 +39,31 @@ DELETE http://localhost:8080/contacts/65139a08a4281735bb0b6610 HTTP/1.1
 GET https://cse341-projects-tefx.onrender.com/contacts
 
 ###### Get a contact by id
-GET https://cse341-projects-tefx.onrender.com/contacts/650e332fa43c4453bd52cf55
+GET https://cse341-projects-tefx.onrender.com/contacts/65147fed9df6103af04fd175
+
+### Create a new contact in the collection
+POST https://cse341-projects-tefx.onrender.com/contacts HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName": "Calypso",
+    "lastName": "Aurich",
+    "email": "calypso@email.com",
+    "favoriteColor": "grey",
+    "birthday": "April 15"
+}
+
+### Update a contact in the collection by id
+PUT https://cse341-projects-tefx.onrender.com/contacts/65149c148fad1a56c9a367cc HTTP/1.1
+Content-Type: application/json
+
+{
+    "firstName":"Calypso",
+    "lastName":"Aurich",
+    "email":"calypsoBites@email.com",
+    "favoriteColor":"greyish",
+    "birthday":"May 15"
+}
+
+### Delete a contact in the collection by id
+DELETE https://cse341-projects-tefx.onrender.com/contacts/65149c148fad1a56c9a367cc HTTP/1.1
