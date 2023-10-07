@@ -20,7 +20,8 @@
     "express": "4.18.2",
     "mongodb": "^6.1.0",
     "mongoose": "^7.5.3",
-    "swagger-autogen": "^2.23.6"
+    "swagger-autogen": "^2.23.6",
+    "swagger-ui-express": "^5.0.0"
   },
   "bugs": {
     "url": "https://github.com/Shandaaurich/git-github.com-Shandaaurich-CSE341_WK-1/issues"
